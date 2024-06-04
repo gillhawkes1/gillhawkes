@@ -1,2 +1,2 @@
 # gillhawkes
-Personal website for growth
+Personal website for portfolio
