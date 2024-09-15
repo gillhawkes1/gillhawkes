@@ -1,10 +1,10 @@
 {
   "name": "gillhawkes",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --no-progress",
+    "build": "ng build --omit=dev --no-progress --yes",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
