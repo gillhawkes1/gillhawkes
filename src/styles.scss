@@ -1,5 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
-body {
+body, html {
+  height: 100%;
+  margin: 0;
   background-color: rgb(214,240,255);
   color: rgb(0,125,209)
+}
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+router-outlet {
+  flex-grow: 0;
+}
+
+app-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1em;
 }
