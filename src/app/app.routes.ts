@@ -3,6 +3,7 @@ import { HomeComponent } from "./pages/home/home.component";
 import { AboutmeComponent } from "./pages/aboutme/aboutme.component";
 import { ContactmeComponent } from "./pages/contactme/contactme.component";
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 export const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,7 +13,7 @@ export const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule, FormsModule]
 })
 
 export class AppRoutingModule { }
