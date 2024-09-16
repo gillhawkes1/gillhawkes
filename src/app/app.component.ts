@@ -3,6 +3,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { version } from '../../package.json';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,5 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'gillhawkes';
+  version = version;
 }
