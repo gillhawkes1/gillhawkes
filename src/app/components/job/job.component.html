@@ -1,0 +1,13 @@
+<div class="job">
+  <div class="job-details">
+    <span class="title"><h3>{{ jobTitle }}</h3></span>
+    <span class="dates"><p class="date">{{ startDate }} - {{ endDate || 'Current' }}</p></span>
+  </div>
+  <h4 class="company">{{ company }}</h4>
+  <p>{{ description }}</p>
+  <ul>
+  @for (item of technologies; track item) {
+    <li class="tech-item">{{item}}</li>
+  }
+  </ul>
+</div>

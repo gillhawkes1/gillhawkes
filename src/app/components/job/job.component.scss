@@ -1,0 +1,49 @@
+.job{
+  padding: 1rem 0 1rem 0;
+}
+
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  line-height: 0rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.dates {
+  text-align: right;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.tech-item {
+  font-size: .8rem;
+}
+
+.job ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: .2rem;
+  padding: 0 0 0 0;
+
+
+  li {
+    text-decoration: none;
+    background-color: #003e81;
+    border-color: #007bff;
+    color: white;
+    text-align: center;
+    align-content: center;
+    border-radius: 9999px;
+    transition: background-color 0.5s ease;
+    display: inline-flex;
+    padding: .125rem .7rem;
+  }
+}

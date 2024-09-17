@@ -21,8 +21,10 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   padding: 5px 12px;
-  background-color: #007bff;
-  color: white;
+  background-color: none;
+  border-color: #003a79;
+  color: rgb(0,125,209);
+  border-style: 5px;
   text-align: center;
   align-content: center;
   border-radius: 20px;
@@ -30,5 +32,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #003a79;
+  background-color: #007bff;
+  color: white;
 }

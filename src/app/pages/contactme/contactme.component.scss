@@ -39,13 +39,16 @@ button {
 }
 
 button:hover {
-  background-color: #003a79;
-  cursor: pointer;
+  // background-color: #003a79;
+  // cursor: pointer;
 }
 
-img {
-  border-radius: 20px;
-  max-width: 100%;
+.disabled {
+  background-color: grey;
+  :hover {
+    background-color: grey;
+    cursor: none;
+  }
 }
 
 

@@ -17,5 +17,7 @@ export class ContactmeComponent {
 
   onSubmit() {
     alert('Form submitted.');
-  }
+  };
+
+  contactAlt = "You can reach me a different way (or take a look at my other links) here:"
 }
