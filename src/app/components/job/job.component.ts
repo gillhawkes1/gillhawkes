@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './job.component.html',
   styleUrl: './job.component.scss'
 })
+
 export class JobComponent {
   @Input() jobTitle!: string;
   @Input() company!: string;

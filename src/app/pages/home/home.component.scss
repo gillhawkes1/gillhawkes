@@ -9,6 +9,7 @@
     --gray-900: oklch(19.37% 0.006 300.98);
     --gray-700: oklch(36.98% 0.014 302.71);
     --gray-400: oklch(70.9% 0.015 304.04);
+    --blue-dark: #003e81;
 
     --red-to-pink-to-purple-vertical-gradient: linear-gradient(
       180deg,
@@ -144,7 +145,7 @@
     display: flex;
     align-items: center;
     gap: 0.73rem;
-    margin-top: 1.5rem;
+    margin-top: .5rem;
   }
 
   .social-links path {
@@ -153,7 +154,7 @@
   }
 
   .social-links a:hover svg path {
-    fill: var(--gray-900);
+    fill: var(--blue-dark);
   }
 
   .left-side {
