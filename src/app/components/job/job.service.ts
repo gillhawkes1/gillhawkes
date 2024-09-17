@@ -22,7 +22,7 @@ export class JobsService {
       location: "Charlotte, NC",
       startDate: "Feb 2022",
       endDate: "",
-      technologies: ["TypeScript","JavaScript", "Vuejs", "React", "Hanldebars", "SCSS"],
+      technologies: ["JavaScript","TypeScript", "Vuejs", "React", "Handlebars", "SCSS"],
       description: "Developed and maintained multiple stateful associate-facing ADA-compliant E-Commerce pinpad purchase and configuration store for Business Banking & Small Business companies."
     },
     {
