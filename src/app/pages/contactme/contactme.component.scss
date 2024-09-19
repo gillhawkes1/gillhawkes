@@ -1,6 +1,11 @@
 .contact-me {
   max-width: 600px;
   margin: 0 auto;
+  padding-bottom: 2rem;
+  
+  h2 {
+    padding-bottom:2rem;
+  }
 }
 
 .form-group {
@@ -39,8 +44,8 @@ button {
 }
 
 button:hover {
-  // background-color: #003a79;
-  // cursor: pointer;
+  background-color: #003a79;
+  cursor: pointer;
 }
 
 .disabled {
@@ -51,4 +56,12 @@ button:hover {
   }
 }
 
-
+a {
+  display: inline-block; // Ensures the anchor behaves well with an inline image
+  img {
+    transition: transform 0.2s ease-in-out; // Smooth transition for scaling
+    &:hover {
+      transform: scale(1.05); // Adjust the scale factor as needed (1.1 means 10% bigger)
+    }
+  }
+}

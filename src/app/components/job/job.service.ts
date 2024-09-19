@@ -23,7 +23,7 @@ export class JobsService {
       startDate: "Feb 2022",
       endDate: "",
       technologies: ["JavaScript","TypeScript", "Vuejs", "React", "Handlebars", "SCSS"],
-      description: "Developed and maintained multiple stateful associate-facing ADA-compliant E-Commerce pinpad purchase and configuration store for Business Banking & Small Business companies."
+      description: "Developed and maintained multiple stateful associate-facing ADA-compliant applications for purchasing and configuring payment pinpads for Business Banking & Small Business companies."
     },
     {
       jobTitle: "Full Stack Developer",

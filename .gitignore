@@ -41,4 +41,8 @@ testem.log
 .DS_Store
 Thumbs.db
 
+#script for http-server
 start-server.sh
+
+#env vars
+/src/environments/*
