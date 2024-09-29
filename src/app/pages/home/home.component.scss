@@ -166,7 +166,7 @@
     width: 60%;
   }
 
-  a {
+  .social-links a {
     display: inline-block; // Ensures the anchor behaves well with an inline image
     svg {
       transition: transform 0.1s ease-in-out; // Smooth transition for scaling
@@ -175,6 +175,7 @@
       }
     }
   }
+
   @media screen and (max-width: 650px) {
     .content {
       flex-direction: column;
