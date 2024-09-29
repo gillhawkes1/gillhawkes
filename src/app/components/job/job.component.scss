@@ -47,3 +47,16 @@
     padding: .125rem .7rem;
   }
 }
+
+
+.technologies {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+  .job-details {
+    line-height: normal;
+  }
+
+}

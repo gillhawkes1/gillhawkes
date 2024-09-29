@@ -90,8 +90,7 @@
   .divider {
     width: 1px;
     background: var(--red-to-pink-to-purple-vertical-gradient);
-    margin-inline: 1.5rem;
-
+    margin: 0 1.5rem 0 1.5rem;
   }
 
   .pill-group {
@@ -177,9 +176,32 @@
   }
 
   @media screen and (max-width: 650px) {
+
+    .main {
+    padding: 0rem;
+    }
     .content {
       flex-direction: column;
-      width: max-content;
+    }
+
+    .right-side, .left-side {
+      width: 100%;
+    }
+
+    .left-side {
+      text-align: center;
+      img {
+        max-width: 60%;
+        height: auto;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .meimg {
+      width: 80%;
     }
 
     .divider {
@@ -187,5 +209,6 @@
       width: 100%;
       background: var(--red-to-pink-to-purple-horizontal-gradient);
       margin-block: 1.5rem;
+      margin: 1.5rem 0 1.5rem 0;
     }
   }
