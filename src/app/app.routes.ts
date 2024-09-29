@@ -5,6 +5,7 @@ import { ContactmeComponent } from "./pages/contactme/contactme.component";
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { NgFor } from '@angular/common';
 
 export interface RouteWithDisplay {
   path: string;
@@ -21,9 +22,15 @@ export const routes: RouteWithDisplay[] = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgFor,
+    FormsModule
   ],
-  exports: [RouterModule, FormsModule]
+  exports: [
+    RouterModule,
+    FormsModule,
+    NgFor
+  ]
 })
 
 export class AppRoutingModule { }

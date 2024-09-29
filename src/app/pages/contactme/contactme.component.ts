@@ -11,8 +11,13 @@ import { environment } from '../../../environments/environment';
 })
 export class ContactmeComponent {
 
-  contactMe = "Contact Me - I like email!"
-  contactAlt = "You can reach me a different way (or take a look at my other links) here:"
+  contactMe = "Contact Me - I like email!";
+  contactAlt = "You can reach me a different way (or take a look at my other links) here:";
+  contact = {
+    name: '',
+    email: '',
+    message: ''
+  };
 
   onSubmit(e: Event) {
     e.preventDefault();
@@ -21,6 +26,11 @@ export class ContactmeComponent {
     .then((result: EmailJSResponseStatus) => {
       console.log(result.text);
       alert('Email sent successfully!');
+      this.contact = {
+        name: '',
+        email: '',
+        message: ''
+      }
     }, (error) => {
       console.log(error.text);
       alert('Failed to send email.');

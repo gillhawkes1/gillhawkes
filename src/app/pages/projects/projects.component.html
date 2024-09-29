@@ -1,1 +1,12 @@
-<p>projects works!</p>
+<main class="main">
+  <div class="projects">
+    <h2 class="centered">{{title}}</h2>
+    @for (repo of repos; track repo.name) {
+      <app-repo
+        [description]="repo.description"
+        [name]="repo.name"
+        [html_url]="repo.html_url">
+      </app-repo>
+    }
+  </div>
+</main>
