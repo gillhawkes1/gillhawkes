@@ -3,44 +3,114 @@ nav {
   justify-content: flex-end;
   top: 0;
   right: 0;
-  padding: 20px 5%;
+  padding: 15px;
 }
 
-nav ul {
-  list-style-type: none;
+ul {
   display: flex;
-  gap: 15px;
+  list-style: none;
+  padding: 0;
   margin: 0;
-  padding: 0 0 50 0;
-}
-
-nav ul li {
-  display: inline-flex;
-}
-
-nav ul li a {
-  text-decoration: none;
-  padding: 5px 12px;
-  background-color: none;
-  border-color: #003a79;
-  color: rgb(0,125,209);
-  border-style: 5px;
-  text-align: center;
-  align-content: center;
-  border-radius: 20px;
-  transition: background-color 0.5s ease;
-  white-space: nowrap;
-}
-
-nav ul li a:hover {
-  background-color: #007bff;
-  color: white;
-}
-
-@media screen and (max-width: 650px) {
-  nav {
-    align-items: center;
-    justify-content: center;
+  li {
+    a {
+      text-decoration: none;
+      padding: 5px 12px;
+      background-color: none;
+      border-color: #003a79;
+      color: rgb(0,125,209);
+      border-style: 5px;
+      text-align: center;
+      align-content: center;
+      border-radius: 20px;
+      transition: background-color 0.5s ease;
+      white-space: nowrap;
+      &:hover {
+        background-color: #007bff;
+        color: white;
+      }
+    }
   }
-  
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Regular nav for screens larger than 650px */
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+/* Media query for screens smaller than 650px */
+@media (max-width: 650px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .hamburger {
+    margin: 5px 5px 0 0;
+    display: block;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(0,125,209);
+    z-index: 1001;
+    position: relative;
+  }
+
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.658);
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-overlay.show {
+    right: 0;
+  }
+
+  .close-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  ul li {
+    margin: 5px 0;
+    padding-bottom: 10px
+  }
+
+  .active {
+    background-color: #6ab2ff;
+    color: black;
+    font-weight: bold;
+  }
 }

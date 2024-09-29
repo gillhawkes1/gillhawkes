@@ -1,7 +1,13 @@
-<nav>
-  <ul>
-    <li><a class="shadow" routerLink="/">Home</a></li>
-    <li><a class="shadow" routerLink="/aboutme">About Me</a></li>
-    <li><a class="shadow" routerLink="/contactme">Contact Me</a></li>
-  </ul>
-</nav>
+<div class="navbar">
+  <button (click)="toggleMenu()" class="hamburger">{{ menuVisible ? 'X' : '&#9776;' }}</button>
+  <div class="nav-overlay" [ngClass]="{'show': menuVisible}">
+    <nav>
+      <ul [class.show]="menuVisible">
+        <li><a class="shadow" routerLink="/" [ngClass]="{'active': isActive('/')}">Home</a></li>
+        <li><a class="shadow" routerLink="/aboutme" [ngClass]="{'active': isActive('/aboutme')}">About Me</a></li>
+        <li><a class="shadow" routerLink="/contactme" [ngClass]="{'active': isActive('/contactme')}">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+

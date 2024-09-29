@@ -4,6 +4,7 @@ import { AboutmeComponent } from "./pages/aboutme/aboutme.component";
 import { ContactmeComponent } from "./pages/contactme/contactme.component";
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 export const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,7 +13,9 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
   exports: [RouterModule, FormsModule]
 })
 
