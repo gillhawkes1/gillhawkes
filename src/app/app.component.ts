@@ -3,7 +3,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { version } from '../../package.json';
-import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-root',

@@ -4,12 +4,19 @@ import { AboutmeComponent } from "./pages/aboutme/aboutme.component";
 import { ContactmeComponent } from "./pages/contactme/contactme.component";
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
-export const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'aboutme', component: AboutmeComponent},
-  {path: 'contactme', component: ContactmeComponent}
+export interface RouteWithDisplay {
+  path: string;
+  component: any;
+  display: string;
+}
+
+export const routes: RouteWithDisplay[] = [
+  {path: '', display: 'Home', component: HomeComponent},
+  {path: 'aboutme', display: 'About Me', component: AboutmeComponent},
+  {path: 'projects', display: 'Projects', component: ProjectsComponent},
+  {path: 'contactme', display: 'Contact Me', component: ContactmeComponent},
 ];
 
 @NgModule({

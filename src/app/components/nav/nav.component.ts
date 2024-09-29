@@ -1,12 +1,13 @@
-import { NgClass } from '@angular/common';
+import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterModule, NavigationEnd, Router } from '@angular/router';
+import { RouterLink, RouterModule, NavigationEnd, Router, Route } from '@angular/router';
+import { routes, RouteWithDisplay } from '../../app.routes';
 
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterModule, RouterLink, NgClass],
+  imports: [RouterModule, RouterLink, NgClass, NgFor],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
@@ -29,4 +30,6 @@ export class NavComponent {
   toggleMenu() {
     this.menuVisible = !this.menuVisible;
   }
+
+  routes: RouteWithDisplay[] = routes;
 }

@@ -3,9 +3,7 @@
   <div class="nav-overlay" [ngClass]="{'show': menuVisible}">
     <nav>
       <ul [class.show]="menuVisible">
-        <li><a class="shadow" routerLink="/" [ngClass]="{'active': isActive('/')}">Home</a></li>
-        <li><a class="shadow" routerLink="/aboutme" [ngClass]="{'active': isActive('/aboutme')}">About Me</a></li>
-        <li><a class="shadow" routerLink="/contactme" [ngClass]="{'active': isActive('/contactme')}">Contact Me</a></li>
+        <li *ngFor="let route of routes"><a class="shadow" [routerLink]="route.path" [ngClass]="{'active': isActive('/'+route.path)}">{{route.display}}</a></li>
       </ul>
     </nav>
   </div>
