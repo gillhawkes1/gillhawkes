@@ -18,23 +18,19 @@ export class ContactmeComponent {
   thanksForContacting: string = "Thanks! I will get back to you as soon as I can."
   showForm: Boolean = true;
   contact = {
-    name: '',
-    email: '',
-    message: ''
+    name: null,
+    email: null,
+    message: null
   };
 
   onSubmit(e: Event) {
     e.preventDefault();
     if(environment.production) {
+      if(this.contact.email)
       emailjs.sendForm(environment.emailJsServiceId, environment.emailJsTemplateId, e.target as HTMLFormElement, environment.emailJsUserId)
       .then((result: EmailJSResponseStatus) => {
         console.log(result);
         alert('Email sent successfully!');
-        this.contact = {
-          name: '',
-          email: '',
-          message: ''
-        }
         this.showForm = false;
       }, (error) => {
         console.log(error.text);
@@ -42,11 +38,6 @@ export class ContactmeComponent {
       });      
     } else {
       alert('Email sent successfully! (this is a local response)');
-      this.contact = {
-        name: '',
-        email: '',
-        message: ''
-      };
       this.showForm = false
     }
 

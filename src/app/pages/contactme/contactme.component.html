@@ -12,7 +12,12 @@
         <div class="form-group">
           <textarea class="shadow" [(ngModel)]="contact.message" placeholder="Message..." id="message" name="message" required></textarea>
         </div>
-        <button class="shadow" type="submit">Send</button>
+        @if(contact.email && contact.name && contact.message) {
+          <button class="shadow enabled" type="submit">Send</button>
+        } @else {
+          <button disabled class="shadow disabled" type="submit">Send</button>
+        }
+
       </form>      
     } @else {
       <div class="centered">{{thanksForContacting}}</div>
