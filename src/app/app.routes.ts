@@ -1,9 +1,9 @@
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { HomeComponent } from "./pages/home/home.component";
 import { AboutmeComponent } from "./pages/aboutme/aboutme.component";
 import { ContactmeComponent } from "./pages/contactme/contactme.component";
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel, FormControl } from '@angular/forms';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { NgFor } from '@angular/common';
 
@@ -24,12 +24,11 @@ export const routes: RouteWithDisplay[] = [
   imports: [
     RouterModule.forRoot(routes),
     NgFor,
-    FormsModule
-  ],
-  exports: [
-    RouterModule,
     FormsModule,
-    NgFor
+    FormControl
+  ],
+  declarations: [ContactmeComponent],
+  exports: [
   ]
 })
 

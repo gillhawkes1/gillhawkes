@@ -13,7 +13,6 @@ export interface JobInterface {
 @Injectable({
   providedIn: 'root',
 })
-
 export class JobsService {
   jobs: JobInterface[] = [
     {

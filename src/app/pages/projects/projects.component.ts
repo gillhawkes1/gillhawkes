@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { GithubService } from '../../services/github.service';
 import { NgFor, CommonModule } from '@angular/common';
 import { RepoComponent } from '../../components/repo/repo.component';
@@ -9,14 +9,13 @@ import { RepoComponent } from '../../components/repo/repo.component';
   imports: [NgFor, CommonModule, RepoComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
-  providers: [GithubService]
+  providers: []
 })
 export class ProjectsComponent {
   title = 'My Projects'
   repos: any[] = [];
 
-  // constructor(private githubService: GithubService) { }
-  private githubService = inject(GithubService);
+  constructor(private githubService: GithubService) { }
 
   ngOnInit(): void {
     this.githubService.getRepos().subscribe((data) => {

@@ -38,7 +38,6 @@ ul {
   cursor: pointer;
 }
 
-/* Regular nav for screens larger than 650px */
 ul {
   display: flex;
   list-style: none;
@@ -50,7 +49,6 @@ ul li {
   margin-right: 20px;
 }
 
-/* Media query for screens smaller than 650px */
 @media (max-width: 650px) {
   .navbar {
     position: fixed;

@@ -74,7 +74,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
     margin-bottom: 3rem;
   }
 
@@ -157,19 +157,19 @@
   }
 
   .left-side {
-    width: 40%;
+    width: 35%;
   }
   
   .right-side {
-    width: 60%;
+    width: 65%;
   }
 
   .social-links a {
-    display: inline-block; // Ensures the anchor behaves well with an inline image
+    display: inline-block;
     svg {
-      transition: transform 0.1s ease-in-out; // Smooth transition for scaling
+      transition: transform 0.1s ease-in-out;
       &:hover {
-        transform: scale(1.1); // Adjust the scale factor as needed (1.1 means 10% bigger)
+        transform: scale(1.1);
       }
     }
   }
