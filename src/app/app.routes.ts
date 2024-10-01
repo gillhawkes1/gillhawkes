@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, NgModel, FormControl } from '@angular/forms';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { NgFor } from '@angular/common';
+import { NavButtonHoverDirective } from './directives/styles/nav-button-hover.directive';
 
 export interface RouteWithDisplay {
   path: string;
@@ -27,9 +28,14 @@ export const routes: RouteWithDisplay[] = [
     FormsModule,
     FormControl
   ],
-  declarations: [ContactmeComponent],
-  exports: [
-  ]
+  declarations: [
+    HomeComponent,
+    AboutmeComponent,
+    ProjectsComponent,
+    ContactmeComponent,
+    NavButtonHoverDirective
+  ],
+  exports: []
 })
 
 export class AppRoutingModule { }

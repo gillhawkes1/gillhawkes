@@ -3,7 +3,7 @@
   <div class="nav-overlay" [ngClass]="{'show': menuVisible}">
     <nav>
       <ul [class.show]="menuVisible">
-        <li *ngFor="let route of routes"><a class="shadow" [routerLink]="route.path" [ngClass]="{'active': isActive('/'+route.path)}">{{route.display}}</a></li>
+        <li *ngFor="let route of routes"><a appNavButtonHover class="shadow" [routerLink]="route.path" [ngClass]="{'active': isActive('/'+route.path)}">{{route.display}}</a></li>
       </ul>
     </nav>
   </div>

@@ -2,12 +2,13 @@ import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterModule, NavigationEnd, Router, Route } from '@angular/router';
 import { routes, RouteWithDisplay } from '../../app.routes';
+import { NavButtonHoverDirective } from '../../directives/styles/nav-button-hover.directive';
 
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterModule, RouterLink, NgClass, NgFor],
+  imports: [RouterModule, RouterLink, NgClass, NgFor, NavButtonHoverDirective],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
