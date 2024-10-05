@@ -3,10 +3,11 @@ import { HomeComponent } from "./pages/home/home.component";
 import { AboutmeComponent } from "./pages/aboutme/aboutme.component";
 import { ContactmeComponent } from "./pages/contactme/contactme.component";
 import { NgModule } from '@angular/core';
-import { FormsModule, NgModel, FormControl } from '@angular/forms';
+import { FormsModule, FormControl } from '@angular/forms';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { NgFor } from '@angular/common';
 import { NavButtonHoverDirective } from './directives/styles/nav-button-hover.directive';
+import { SentenceCasePipe } from './pipes/sentence-case.pipe';
 
 export interface RouteWithDisplay {
   path: string;
@@ -15,10 +16,10 @@ export interface RouteWithDisplay {
 }
 
 export const routes: RouteWithDisplay[] = [
-  {path: '', display: 'Home', component: HomeComponent},
-  {path: 'aboutme', display: 'About Me', component: AboutmeComponent},
-  {path: 'projects', display: 'Projects', component: ProjectsComponent},
-  {path: 'contactme', display: 'Contact Me', component: ContactmeComponent},
+  {path: '', display: 'home', component: HomeComponent},
+  {path: 'aboutme', display: 'about me', component: AboutmeComponent},
+  {path: 'projects', display: 'projects', component: ProjectsComponent},
+  {path: 'contactme', display: 'contact me', component: ContactmeComponent},
 ];
 
 @NgModule({
@@ -33,7 +34,8 @@ export const routes: RouteWithDisplay[] = [
     AboutmeComponent,
     ProjectsComponent,
     ContactmeComponent,
-    NavButtonHoverDirective
+    NavButtonHoverDirective,
+    SentenceCasePipe
   ],
   exports: []
 })
