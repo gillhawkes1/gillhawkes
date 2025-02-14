@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor, CommonModule, RepoComponent],
+  imports: [CommonModule, RepoComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
   providers: []

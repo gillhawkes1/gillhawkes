@@ -6,7 +6,7 @@ import { JobsService, JobInterface } from "../../components/job/job.service";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, RouterOutlet, JobComponent],
+  imports: [JobComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
