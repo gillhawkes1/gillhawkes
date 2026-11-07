@@ -5,12 +5,11 @@ import { RepoComponent } from '../../components/repo/repo.component';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [CommonModule, RepoComponent],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss',
-  providers: []
+    selector: 'app-projects',
+    imports: [CommonModule, RepoComponent],
+    templateUrl: './projects.component.html',
+    styleUrl: './projects.component.scss',
+    providers: []
 })
 export class ProjectsComponent {
   title = 'My Projects'

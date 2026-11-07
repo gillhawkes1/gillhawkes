@@ -4,11 +4,10 @@ import { JobComponent } from "../../components/job/job.component";
 import { JobsService, JobInterface } from "../../components/job/job.service";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [JobComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    imports: [JobComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   name = "Gill Hawkes"

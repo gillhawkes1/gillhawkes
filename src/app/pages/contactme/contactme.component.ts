@@ -5,11 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-contactme',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './contactme.component.html',
-  styleUrl: './contactme.component.scss'
+    selector: 'app-contactme',
+    imports: [FormsModule],
+    templateUrl: './contactme.component.html',
+    styleUrl: './contactme.component.scss'
 })
 export class ContactmeComponent {
 

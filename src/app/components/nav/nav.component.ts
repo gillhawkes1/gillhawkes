@@ -7,11 +7,10 @@ import { SentenceCasePipe } from '../../pipes/sentence-case.pipe';
 
 
 @Component({
-  selector: 'app-nav',
-  standalone: true,
-  imports: [RouterModule, RouterLink, NgClass, NgFor, NavButtonHoverDirective, SentenceCasePipe],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss'
+    selector: 'app-nav',
+    imports: [RouterModule, RouterLink, NgClass, NgFor, NavButtonHoverDirective, SentenceCasePipe],
+    templateUrl: './nav.component.html',
+    styleUrl: './nav.component.scss'
 })
 export class NavComponent {
 
