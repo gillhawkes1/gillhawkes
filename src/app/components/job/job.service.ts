@@ -16,13 +16,13 @@ export interface JobInterface {
 export class JobsService {
   jobs: JobInterface[] = [
     {
-      jobTitle: "Software Engineer II",
-      company: "Bank of America",
-      location: "Charlotte, NC",
-      startDate: "Feb 2022",
-      endDate: "",
-      technologies: ["JavaScript","TypeScript", "Vuejs", "Handlebars", "SCSS"],
-      description: "Developed and maintained multiple stateful associate-facing ADA-compliant applications for purchasing and configuring payment pinpads for Business Banking & Small Business companies."
+      jobTitle: "Sous Chef",
+      company: "Flatiron Kitchen & Taphouse",
+      location: "Davidson, NC",
+      startDate: "Sept 2015",
+      endDate: "Jan 2020",
+      technologies: ["Specials", "Leadership", "Scheduling", "Inventory", "Training"],
+      description: "Managed and led a team of 9 employees ensuring smooth operations. Developed and implemented strategies to reduce labor and food cost to maximize annual revenue growth. Created daily unique Entree and Appetizer specials to guarantee new plates each day."
     },
     {
       jobTitle: "Full Stack Developer",
@@ -34,17 +34,26 @@ export class JobsService {
       description: "Designed, implemented, deployed and maintained numerous applications for internal use: Ticketing System, Time Clock, Inventory Management, Employee Reviews, Employee Goals, and Bonus Pool Calculation."
     },
     {
-      jobTitle: "Sous Chef",
-      company: "Flatiron Kitchen & Taphouse",
-      location: "Davidson, NC",
-      startDate: "Sept 2015",
-      endDate: "Jan 2020",
-      technologies: ["Specials", "Leadership", "Scheduling", "Inventory", "Training"],
-      description: "Managed and led a team of 9 employees ensuring smooth operations. Developed and implemented strategies to reduce labor and food cost to maximize annual revenue growth. Created daily unique Entree and Appetizer specials to guarantee new plates each day."
+      jobTitle: "Software Engineer II",
+      company: "Bank of America",
+      location: "Charlotte, NC",
+      startDate: "Feb 2022",
+      endDate: "December 2024",
+      technologies: ["JavaScript","TypeScript", "Vuejs", "Handlebars", "SCSS"],
+      description: "Developed and maintained multiple stateful associate-facing ADA-compliant applications for purchasing and configuring payment pinpads for Business Banking & Small Business companies."
     },
+    {
+      jobTitle: "Full Stack Software Engineer",
+      company: "GXO Logistics Inc.",
+      location: "Greensboro, NC",
+      startDate: "Jan 2025",
+      endDate: "",
+      technologies: ["Angular", "Typescript", "C#", ".NET", "PL/SQL"],
+      description: "Dedicated warehouse application resouce for Apple Inc. Implemented features for client specific needs touching the full lifecycle of the code for all warehouse tasks with a concentration in picking."
+    }
   ];
   
-  getJobs() {
-    return this.jobs;
+  public getJobs(): JobInterface[] {
+    return this.jobs.reverse();
   }
 }
