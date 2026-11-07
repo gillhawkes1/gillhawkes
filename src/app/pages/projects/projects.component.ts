@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { GithubService } from '../../services/github.service';
-import { NgFor, CommonModule } from '@angular/common';
+
 import { RepoComponent } from '../../components/repo/repo.component';
 import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-projects',
-    imports: [CommonModule, RepoComponent],
+    imports: [RepoComponent],
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.scss',
     providers: []

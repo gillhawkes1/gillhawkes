@@ -1,4 +1,4 @@
-import { NgClass, NgFor } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterModule, NavigationEnd, Router, Route } from '@angular/router';
 import { routes, RouteWithDisplay } from '../../app.routes';
@@ -8,7 +8,7 @@ import { SentenceCasePipe } from '../../pipes/sentence-case.pipe';
 
 @Component({
     selector: 'app-nav',
-    imports: [RouterModule, RouterLink, NgClass, NgFor, NavButtonHoverDirective, SentenceCasePipe],
+    imports: [RouterModule, RouterLink, NgClass, NavButtonHoverDirective, SentenceCasePipe],
     templateUrl: './nav.component.html',
     styleUrl: './nav.component.scss'
 })
